@@ -1,0 +1,69 @@
+
+    <html>
+        <head>
+          <title>Login Page</title>
+          <style>
+            .Label{
+              color: blue;
+            }
+            #email{
+              border-radius: 10px;
+              border-style: ridge;
+              border-color: blue;
+              color: brown;
+            }
+            #password{
+              border-radius: 10px;
+              border-style: ridge;
+              border-color: blue;
+              color: brown;
+            }
+            #Login{
+              border-radius: 10px;
+              border-color: blue;
+              border-style: ridge;
+              cursor: pointer;
+            }
+          </style>
+        </head>
+        <body style="background-color: rgb(210, 234, 178); font-family: Verdana, Geneva, Tahoma, sans-serif;">
+          <center>
+            <form>
+            <label class="Label">E-mail: </label> <input type="text" id="email" placeholder="EmailId or Number"><br><br>
+            <label class="Label">Password: </label> <input type="password" id="password" placeholder="Password here"><br><br>
+            <button id="Login" onclick="Login()">Login</button>
+            <h2 id="result"></h2>
+            </form>
+          </center>
+          <script>
+          function Login(){
+            event.preventDefault();
+              var db_details = {
+                email: "h3@gmail.com",
+                password: "12345",
+                PhoneNumber: 9381416617
+              }
+              var email = document.getElementById("email").value;
+              var password = document.getElementById("password").value;
+              var result = document.getElementById("result").value;
+              (email === db_details.email || email === db_details.PhoneNumber) && password === db_details.password ? success() : Failed()
+              if(email === "" && password === ""){
+                enterCredentials();
+              }
+            }
+            function success(){
+               result.innerHTML = "Login Successful";
+               result.style.color = 'green';
+            }
+            function Failed(){
+              result.innerHTML = "Login Failed";
+              result.style.color = 'red';
+            }
+            function enterCredentials(){
+              result.innerHTML = "Please Enter Credentials";
+              result.style.color = 'orange';
+              // alert("Enter Credentials");
+            }
+          </script>
+        </body>
+      </html>

@@ -1,0 +1,48 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+
+        <ul id="list" style="list-style-type: none">
+        </ul>
+        <script>
+            var e = document.getElementById("list");
+            var c = [
+                {
+                    img_src : "https://media-exp1.licdn.com/dms/image/C5603AQHVxi1fyBvLcw/profile-displayphoto-shrink_400_400/0/1649995897441?e=1669248000&v=beta&t=3pKc-Yy29jOo1wx9eK8tK4sI6PancMQnn8hF1iBTWEI",
+                    name : "nagadeepak",
+                    url : "https://www.linkedin.com/in/naga-deepak-804145136/",
+                    designation : "developer"
+                },
+                {
+                    img_src : "https://media-exp1.licdn.com/dms/image/C5603AQE6CoxCTKxJgg/profile-displayphoto-shrink_400_400/0/1624591374170?e=1669248000&v=beta&t=FAbnWK8MDl_0ltVFiW4JseO3zbqnMmbsyq-j4C5VxF0",
+                    name : "Gnanam",
+                    url : "https://www.linkedin.com/in/thamizh-gnanam-k-s-66a457247/",
+                    designation : "full stackdeveloper"
+                },
+                {
+                    img_src : "https://media-exp1.licdn.com/dms/image/C5603AQE6CoxCTKxJgg/profile-displayphoto-shrink_400_400/0/1624591374170?e=1669248000&v=beta&t=FAbnWK8MDl_0ltVFiW4JseO3zbqnMmbsyq-j4C5VxF0",
+                    name : "vivek",
+                    url : "https://www.linkedin.com/in/chagarlamudi-vivek/",
+                    designation : "developer"
+                },
+                {
+                    img_src : "https://media-exp1.licdn.com/dms/image/C5603AQE6CoxCTKxJgg/profile-displayphoto-shrink_400_400/0/1624591374170?e=1669248000&v=beta&t=FAbnWK8MDl_0ltVFiW4JseO3zbqnMmbsyq-j4C5VxF0",
+                    name : "chaitanya",
+                    url : "https://www.linkedin.com/in/chaitanya-burle-b9793b132/",
+                    designation : "developer"
+                }
+            ]
+            var d= "";
+            for(var i = 0;i < c.length; i++){
+
+                   var f = c[i];
+                
+                d += "<li>"+"<img src = "+ f.img_src +">" + f.name.link(f.url) + f.designation   +"</li>"
+
+            }
+            e.innerHTML = d
+        </script>
+    </body>
+</html>

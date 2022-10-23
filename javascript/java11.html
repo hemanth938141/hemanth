@@ -1,0 +1,70 @@
+<html>
+    <head>
+        
+
+    </head>
+
+<body>
+
+    <table border = "1">
+
+         <thead>
+                
+
+
+        </thead>
+
+        <tbody>
+            <tr>
+            <td>hemanth</td>
+            <td>fullstack</td>
+            <td>hyd</td>
+            </tr>
+
+            <tr>
+            <td>toni</td>
+            <td>fullstack</td>
+            <td>viz</td>
+            </tr>
+
+            <tr>
+                <td>karun</td>
+                <td>fullstack</td>
+                <td>vij</td>
+            </tr>
+
+            <tr>
+                    <td>nanda</td>
+                    <td>fullstack</td>
+                    <td>kyn</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+    <script>
+
+            var obj = {
+                name : "",
+                course : "",
+                city : ""
+            }
+            var g = document.getElementsByTagName("thead");
+
+           var f = Object.keys(obj);
+            var t = "";
+           f.forEach(function(value){
+
+            t += "<th>"+ value  + "</th>"
+           });
+           g.innerHTML=t;
+           
+
+
+
+
+    </script>
+
+    </body>
+</html>

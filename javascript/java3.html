@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+           body{
+            background-image: url("istockphoto-1212342896-612x612.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            
+        }
+        label{
+            color:blueviolet
+        }
+        input{
+            border: solid 2px black;
+            margin: 300px 150px 50px 50px;
+        }
+        
+        </style>
+
+    </head>
+    <body>
+        <center>
+
+       <label>Enter usename :</label><input  id = "enter" onkeyup="username()" type="text" ><span id = "matter"></span>
+         
+        </center>
+        <script>
+              var Users = ["ravi","suresh","ramesh"];
+              function username(){
+                var input = document.getElementById("enter").value;
+                var scans = document.getElementById("matter");
+                if(Users.includes(input)){
+                    scans.innerHTML= "Username not available";
+                    scans.style.color= "darkred";
+
+                }else{
+                    scans.innerHTML= "Username  available";
+                    scans.style.color= "indigo";
+                }
+              }
+          
+             
+
+
+        </script>
+    </body>
+</html>

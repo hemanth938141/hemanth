@@ -1,0 +1,162 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+       
+
+       <script>
+
+            var s = ["seller1","seller2","seller3","seller4"]
+            var b = document.getElementsByTagName("body")[0];
+
+           var s2=  document.createElement("select");
+           
+    
+
+            for(var i = 0 ; i<s.length;i++){
+                var s1 =s[i];
+                var o = document.createElement("option");
+                o.innerHTML= s1;
+                o.value = s1;
+                s2.appendChild(o);
+            }
+
+            
+           b.appendChild(s2);
+
+
+
+
+           
+
+
+       </script>
+
+        
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <html>
+    <head>
+
+    </head>
+    <body>
+        <button>add</button>
+        <button onclick = "a()">remove</button>
+
+       <script>
+
+            function x(){
+
+              var p =  document.createElement("p");
+              console.log(p)
+              p.innerHTML="hello world"
+              var s = document.getElementsByTagName("body")[0].lastChild.previousSibling
+              document.getElementsByTagName("body")[0].insertBefore(p,s);
+    
+            }
+
+            document.getElementsByTagName("button")[0].addEventListener("click",x);
+
+            function a(){
+                
+                document.getElementsByTagName("button")[0].removeEventListener("click",x);
+            }
+
+
+
+       </script>
+
+        
+
+    </body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <html>
+    <head>
+
+    </head>
+    <body>
+
+        password : <input type = "password" name = "password">
+        password1 : <input type = "password" name = "password1">
+        <h1>hello world</h1>
+        <p class = "a"></p>
+        <script>
+
+            document.getElementsByName("password")[0].value = "hello"
+            document.getElementsByName("password1")[0].value = "hellosrfgf"
+            document.getElementsByTagName("h1")[0].style.backgroundColor = "blue";
+            document.getElementsByClassName("a")[0].innerHTML="i am hemanth"
+
+
+        </script>
+
+    </body>
+</html> -->

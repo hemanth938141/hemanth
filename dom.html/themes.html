@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <style>
+            .theme1{
+                background-color: yellow;
+                color: green;
+            }
+            .theme2{
+                background-color: gray;
+                color: khaki;
+            
+            }
+            .theme3{
+                background-color: rgb(151, 62, 62);
+                color: khaki;
+            
+            }
+            
+        </style>
+
+    </head>
+    <body>
+        <select id = "themes" onclick="changeTheme()">
+            <option value = "theme1">theme1</option>
+            <opiton value = "theme2">theme2</opiton>
+            <option value = "theme3">theme3</option>
+        </select>
+
+        <div>
+            <div id = "x" class = "theme1" display = "none" >
+                <h1>hidi</h1>
+            </div>
+            <div id = "z" class = "theme2" display = "none">
+                <h1>hidijihjhjk</h1>
+            </div>
+            <div id = "y" class = "theme3" display = "none" >
+                <h1>hidiiiiii</h1>
+            </div>
+        
+        </div>
+        <script>
+            function changeTheme(){
+                if(value == theme1){
+                    document.getElementById("x").style.display="block"
+                    document.getElementById("y").style.display="none"
+                    document.getElementById("y").style.display="none"
+                }
+                
+                if(value == theme2){
+                    document.getElementById("x").style.display="none"
+                    document.getElementById("y").style.display="block"
+                    document.getElementById("y").style.display="none"
+            
+                }
+                if(value == theme3){
+                    document.getElementById("x").style.display="none"
+                    document.getElementById("y").style.display="none"
+                    document.getElementById("y").style.display="block"
+            
+                }
+            
+                
+            
+            }
+
+        </script>
+
+
+
+    </body>
+</html>

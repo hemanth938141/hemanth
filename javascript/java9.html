@@ -1,0 +1,58 @@
+<html>
+    <head>
+        
+
+    </head>
+
+<body>
+
+    <table border = "1">
+
+         <thead>
+                <th>category</th>
+                <th>description</th>
+                <th>Id</th>
+
+        </thead>
+
+        <tbody id="y" >
+
+
+        </tbody>
+    </table>
+
+    <script>
+        var body = document.getElementById("y");
+
+        ( function(){
+            var h = new XMLHttpRequest();
+            h.open('get',"https://fakestoreapi.com/products");
+            h.send();
+
+          h.onreadystatechange = function(){
+                console.log(h.readyState)
+                if(h.readyState===4){
+                    console.log(h.responseText);
+                    var p = JSON.parse(h.responseText);
+                    console.log(p);
+                    var items = "";
+                    for(var i = 0 ; i<p.length;i++){
+
+                             var k = p[i];
+
+                            items += "<tr><td>" + k.category +"</td>" + "<td>" + k.description + "</td>" + "<td>" +k.Id  +  "</td></tr>";
+                        }
+                    body.innerHTML=items;
+                
+
+                }
+            }
+        }
+        ) ();
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<html>
+    <head>
+    <script 
+                 src="https://kit.fontawesome.com/7c3c3933ce.js" crossorigin="anonymous">
+
+    </script>
+    <style>
+        .fa-regular{
+             color:blue;
+            font-size: 50px;
+         }
+     </style>
+        
+    </head>
+    <body>
+    <center>
+            <i id ="like" onclick="likeelement()" class="fa-regular fa-thumbs-up"  ></i><span id = "number">0</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <i id ="dislike" onclick="dislikeelement()" class="fa-regular fa-thumbs-down" style="font-size: 50px; color:red" ></i><span id = "downnumber">0</span>
+    </center>
+
+    
+    <script>
+        function likeelement(){
+            var like= document.getElementById("like");
+            var num = document.getElementById("number");
+
+            if(like.style.color=="blue"){
+                like.style.color="black";
+                num.innerHTML=1;
+
+            }else{
+                like.style.color="blue";
+                num.innerHTML=0;
+            }
+           
+        
+        }
+        function dislikeelement(){
+            var like= document.getElementById("dislike");
+            var num = document.getElementById("downnumber");
+
+            if(like.style.color=="red"){
+                like.style.color="black";
+                num.innerHTML=1;
+
+            }else{
+                like.style.color="red";
+                num.innerHTML=0;
+            }
+           
+        
+        }
+    </script>
+
+
+                 
+    
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+            body{
+            background-image: url("images\ \(1\)2.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            
+        }
+        </style>
+    </head>
+    <body>
+        <center>
+
+        Enter ur Id : <input  id = "enter" type = "number"><br><br><br>
+        Enter ur name : <input id = "enter1" type="text"><br><br><br>
+        Enter price : <input id = "enter2" type="number"><br><br><br>
+        Enter Product name : <input id = "enter3" type="text"><br><br><br>
+        Description : <input id = "enter4" type="text"><br><br><br>
+        <button onclick="display()">submit</button>
+
+        </center>
+
+        <h1 id = "displayhere"></h1>
+        <h1 id = "displayhere1"></h1>
+        <h1 id = "displayhere2"></h1>
+        <h1 id = "displayhere3"></h1>
+        <h1 id = "displayhere4"></h1>
+        
+        <script>
+            function display(){
+              var enter =   document.getElementById("enter").value;
+              var enter1 =   document.getElementById("enter1").value;
+              var enter2=   document.getElementById("enter2").value;
+              var enter3=   document.getElementById("enter3").value;
+              var enter4=   document.getElementById("enter4").value;
+
+                document.getElementById("displayhere").innerHTML= "Id is : " + enter;
+                document.getElementById("displayhere1").innerHTML= "Name is : " + enter1;
+                document.getElementById("displayhere2").innerHTML= "Price is : " + enter2;
+                document.getElementById("displayhere3").innerHTML= "Product Name is : " + enter3;
+                document.getElementById("displayhere4").innerHTML= "Description : " + enter4;
+                
+            }
+        </script>
+    </body>
+</html>

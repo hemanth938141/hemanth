@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <style>
+            body{
+            background-image: url("istockphoto-1212342896-612x612.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            }
+        </style>
+
+    </head>
+    <body>
+        <center>
+
+        <select style="font-size: 20px ;" id = "language" onclick = "drop()" >
+             <option value = "english">English</option>
+             <option value = "telugu">Telugu</option>
+             <option value = "hindi">Hindi</option>
+             <option value = "malayalam">Malayalam</option>
+             <option value = "tamil">Tamil</option>
+        </select>
+
+        
+        <h1 id = "get"></h1>
+        </center>
+         <script>
+            drop();
+
+            function drop(){
+                 var language = document.getElementById("language").value;
+                 var print = document.getElementById("get");
+
+                switch(language){
+                    case "english" :
+                        print.innerHTML = "How are you?";
+                        break;
+                        case "telugu" :
+                        print.innerHTML = "మీరు ఎలా ఉన్నారు?";
+                        break;
+                        case "hindi" :
+                        print.innerHTML = "क्या हाल है?";
+                        break;
+                        case "malayalam" :
+                        print.innerHTML = "എന്തൊക്കെയുണ്ട്?";
+                        break;
+                        case "tamil" :
+                        print.innerHTML = "நீங்கள் எப்படி இருக்கிறீர்கள்?";
+                        break;
+                        
+                }
+        
+
+
+
+
+
+            }
+
+
+
+
+
+
+         </script>    
+
+
+    </body>
+</html>

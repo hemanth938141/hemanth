@@ -1,0 +1,58 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+
+        <ul id = "list" style = "list-style-type: none;">
+            <li></li>
+
+        </ul>
+        <script>
+
+                var products = [
+                                    {
+                                        img_src : "https://rukminim1.flixcart.com/image/200/200/kynb6vk0/monitor/1/n/s/lf22t354fhwxxl-full-hd-22-lf22t354fhwxxl-samsung-original-imagats2rjbg9uhv.jpeg?q=70 ",
+                                        category : "Monitors",
+                                        Price : "From 20,000"
+                                    },
+                                    {
+                                        img_src : "https://rukminim1.flixcart.com/image/200/200/ktop5e80/computer/f/p/w/km513ua-l503ts-thin-and-light-laptop-asus-original-imag6yt6ftegd5bx.jpeg?q=70 ",
+                                        category : "Premium laptops",
+                                        Price : "From 45,000"
+                                    },
+                                    {
+                                        img_src : "https://rukminim1.flixcart.com/image/200/200/l2f20sw0/power-bank/t/c/i/-original-imagdrmdqxnbzfpp.jpeg?q=70",
+                                        category : "Premium Power Banks",
+                                        Price : "From 1,000"
+                                    },
+                                    {
+                                        img_src : "https://rukminim1.flixcart.com/image/200/200/l5jxt3k0/dslr-camera/m/n/a/-original-imagg7hsggshhwbz.jpeg?q=70 ",
+                                        category : "premium cameras",
+                                        Price : "From 8,000"
+                                    },
+                              ]
+
+        var index = 0;
+        var list = document.getElementById("list");
+        while(index<products.length){
+              var product = products[index];
+              var u1 = product.img_src;
+              var u2 = product.category;
+              var u3 = product.Price;
+            index++;
+            list.innerHTML = u1;
+            list.innerHTML = u2;
+            list.innerHTML = u3;
+        }
+        
+        
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

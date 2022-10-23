@@ -1,0 +1,18 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button onclick="clicked()">click</button>
+        <h1 id = "visitors"></h1>
+        <script>
+            var counter = 0;
+            function clicked() {
+                var count = document.getElementById("visitors");
+                counter = counter + 1;
+                count.innerHTML="total visitors are: "+counter;
+            }
+        </script>
+
+    </body>
+</html>

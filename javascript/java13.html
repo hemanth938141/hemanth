@@ -1,0 +1,51 @@
+<html>
+
+<head>
+
+</head>
+<body>
+
+    <!-- <img id = "image"  onmouseout="unzoom()" onmouseover="zoom()" src = "images (1)2.jpg" width="200px" height="200px">
+<script>
+    function zoom(){
+var a = document.getElementById("image")
+            a.style.width = "250px"
+            a.style.height = "250px" }
+        function unzoom(){var a = document.getElementById("image")
+                    a.style.width = "200px"
+                    a.style.height = "200px"} -->
+
+     <button id = "b">g</button>
+     <button id = "r">r</button>
+
+                    
+
+     <script>
+
+           var i = document.getElementById("b");
+           var r = document.getElementById("r")
+
+          var eh = function () {
+
+               alert("disable");
+          }
+
+           i.addEventListener("click", eh);
+
+           r.addEventListener("click", function(){
+
+            i.removeEventListener("click", eh);
+           });
+
+
+
+     </script>               
+
+
+    
+
+
+
+
+    </body>
+</html>

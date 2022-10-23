@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function getusers(){
+                var p = new Promise(function(resolve,reject){
+                    var u =["one","two"];
+                    resolve(u)
+                })
+                return p
+            }
+            getusers().then(function(response){
+                console.log(response)
+            },function(error){
+                console.log(reject)
+            })
+
+
+        </script>
+    </body>
+</html>

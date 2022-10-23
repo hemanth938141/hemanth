@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+
+     <body>
+        enter account number:<input oncopy="copy()" onpaste = "paste()" text = "number">
+        <h1 id = "hello" style = "color:red"></h1>
+
+        <script>
+            function copy(){
+                document.getElementById("hello").innerHTML="disabled";
+                return false;
+            }
+            function paste(){
+                document.getElementById("hello").innerHTML="paste is disabled";
+                return false;
+            }
+        </script>
+        
+     </body>
+</html>

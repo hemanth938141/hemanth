@@ -1,0 +1,53 @@
+<html>
+<head>
+</head>
+<body>
+    <ul id="list" style="list-style-type: none">
+    </ul>
+    <script>
+        var categories = [
+            {
+                img_src: "https://rukminim1.flixcart.com/image/200/200/printer/j/j/y/hp-laserjet-m1005-multifunction-original-imadxhzpeb9qbrfg.jpeg?q=70",
+                name: "Printers",
+                price: 9000
+            },
+            {
+                img_src: "https://rukminim1.flixcart.com/image/200/200/l2f20sw0/power-bank/t/c/i/-original-imagdrmdqxnbzfpp.jpeg?q=70",
+                name: "Power Banks",
+                price: 12000
+            },
+            {
+                img_src: "https://rukminim1.flixcart.com/image/200/200/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg?q=70",
+                name: "Hair dyers",
+                price: 5000
+            },
+            {
+                img_src: "https://rukminim1.flixcart.com/image/200/200/kr2e3680/dslr-camera/j/1/n/eos-m50-mark-ii-vlogger-kit-eos-m50-mark-ii-vlogger-kit-canon-original-imag4xzzrhfeycuu.jpeg?q=70",
+                name: "Mirror less cam",
+                price: 15000
+            }
+        ];
+        var list = document.getElementById("list");
+
+        var index = 0;
+
+        var listitems = "";
+        while(index < categories.length){
+
+            var category = categories[index];
+
+           listitems +=  "<li>" +  "<img src =" + category.img_src  + ">"+ "&nbsp&nbsp&nbsp"  + category.name  + "&nbsp&nbsp&nbsp"+ "From:"  + category.price  +"</li>"
+
+            index++;
+
+        }
+
+        list.innerHTML = listitems;
+
+
+
+
+
+            </script>
+</body>
+</html>

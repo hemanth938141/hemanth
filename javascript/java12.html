@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+      accountnumber : <input oncopy = " return copy()" onpaste = "return paste()" type = "number">
+      password : <input type = "password">
+      <h1  id = "copy"></h1>
+
+        <script>
+
+
+
+            function copy(){
+              var copy =  document.getElementById("copy");
+              copy.innerHTML= "cannot be copied";
+              return false;
+             }
+             function paste(){
+                var copy =  document.getElementById("copy");
+                copy.innerHTML= "cannot be pasted";
+                return false;
+             }
+
+
+        </script>
+
+    </body>
+</html>
